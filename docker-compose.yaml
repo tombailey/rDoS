@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+  rdos:
+    build: .
+    ports:
+      - "8080:8080"
+  test-js:
+    build: ./test/js
+    environment:
+      HOST: "rdos:8080"
+    depends_on:
+      - rdos
+  test-jvm:
+    build: ./test/jvm
+    environment:
+      HOST: "rdos:8080"
+    depends_on:
+      - rdos

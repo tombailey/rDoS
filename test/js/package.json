@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "bent": "^7.3.12",
+    "got": "^11.8.2",
+    "needle": "^3.0.0",
+    "node-fetch": "^3.0.0",
+    "superagent": "^6.1.0"
+  },
+  "type": "module"
+}
